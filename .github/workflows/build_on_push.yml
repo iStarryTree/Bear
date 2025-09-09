@@ -10,10 +10,10 @@ jobs:
     strategy:
       matrix:
         include:
-          - os: ubuntu-latest
-            multilib: true
-          - os: ubuntu-latest
-            multilib: false
+          # - os: ubuntu-latest
+          #   multilib: true
+          # - os: ubuntu-latest
+          #   multilib: false
           # Ubuntu 18.04版本，启用multilib
           - os: ubuntu-18.04
             multilib: true
