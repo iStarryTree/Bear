@@ -6,6 +6,8 @@ jobs:
   build:
     runs-on: ${{ matrix.os }}
     name: Build on ${{ matrix.os }} with multilib ${{ matrix.multilib }}
+    container:
+      image: ubuntu:18.04
 
     strategy:
       matrix:
