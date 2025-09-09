@@ -14,8 +14,9 @@ jobs:
             multilib: true
           - os: ubuntu-latest
             multilib: false
-          - os: macos-latest
-            multilib: false
+          # Ubuntu 18.04版本，启用multilib
+          - os: ubuntu-18.04
+            multilib: true
 
     steps:
       - name: Checkout code
